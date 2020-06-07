@@ -1,0 +1,119 @@
+/* style para componentes de acordo com o caminho */
+
+#page-home {
+    height: 120vh;
+
+    background: url('../assets/home-background.svg') no-repeat;
+
+    background-position: 35vw bottom;
+}
+
+#page-home .content {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+#page-home header {
+
+    margin-top:45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a {
+    display: flex;
+
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../assets//log-in.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1 {
+
+    font-size: 54px;
+
+}
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a {
+    max-width: 360px;
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    border-radius: 8px;
+
+    background-color: var(--primary-color);
+
+    transition: 400ms;
+
+}
+
+
+#page-home main a:hover { /*muda a cor quando o mouse tá em cima do botão*/
+    background-color: #2fb86e;
+}
+
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0,0,0,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after {
+    content: '';
+    background-image: url('../assets/search.svg');
+
+    height: 20px;
+    width: 20px;
+}
+
+#page-home main a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}

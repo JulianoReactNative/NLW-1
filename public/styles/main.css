@@ -1,0 +1,33 @@
+
+/*atribui cores a variaveis*/
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+    --bg-color: #f0f0f5
+}
+
+
+/* faz isso pra todos componentes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* mudar o padrão maximo da caixa para borda */
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color:var(--title-color)
+}
